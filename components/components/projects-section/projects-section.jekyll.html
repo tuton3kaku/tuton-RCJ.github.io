@@ -1,0 +1,38 @@
+<!-- begin projects -->
+<section class="section projects" id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="contaniner__inner animate">
+
+          <div class="section__info">
+            <div class="section__head">
+              <h2 class="section__title">{{ include.title }}</h2>
+              <!-- <a class="section__link" href="{{ include.link_url }}">View all <i class="ion ion-md-arrow-forward"></i></a> -->
+            </div>
+            <div class="section__description">{{ include.description_html }}</div>
+          </div>
+
+          <p>
+            ロボカップジュニアのRescue LINEに出場している関東ブロックのチームです。<br>
+            今年、新メンバーを迎え、2025年大会での全国優勝を目指して活動中です。<br>
+            ポスターだけでなく競技でも1位をとれるように頑張ります。<br>
+            
+          </p>
+
+          {% if include.show_projects %}
+          <div class="row">
+            {% for project in site.projects %}
+              {% if forloop.index <= 6 %}
+                {% bookshop project-card project=project %}
+              {% endif %}
+            {% endfor %}
+          </div>
+          {% endif %}
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end projects -->
