@@ -99,11 +99,11 @@ authors:
     name: shuji
     display_name: shuji
     avatar: 'images/shuji.png'
-  people2:
+  kapi:
     name: kapi
     display_name: kapi
     avatar: 'images/kapi.png'
-  poncho:
+  mitu:
     name: mitu
     display_name: mitu
-    avatar: 'images/mitu.png'
+    avatar: 'images/mitu.jpg'
